@@ -23,18 +23,22 @@
 # Name your function get_row_col; it should take a single parameter which is a string of length 2 consisting of 
 # an uppercase letter and a digit.
 # For example, calling get_row_col("A3") should return the tuple (2, 0) because A3 corresponds to the row at index 2 and column at index 0in the board.
+import numpy as np
+import pandas as pd
 
-import numpy
-def get_row_col(s):
-    listl = list(s)
-    board = [
-    ["X", "O", "X"],
-    [" ", " ", " "],
-    ["O", " ", " "],
-]
-    tictactoe = DICIONARIO DOS POSSIVEIS NOMES DAS COLUNAS E DOS ROWS E DEPOIS COMO ACESSÁ-LOS
-    for i in board:
-        for y in i:
-            print(board.index(listl[0])) CONTINUAR TRABALHANDO +- NESSA LINHA
+print("Hi")
+panda_df = pd.DataFrame(data = [["X", "O", "X"],[" ", " ", " "],["O", " ", " "],], 
+index = ["1", "2", "3"], columns = ["A", "B", "C"])
+print("Hi")
+print(panda_df)
+    # panda_df.set_option("display.max_rows", None, "display.max_columns", None)
+    # tictactoe = DICIONARIO DOS POSSIVEIS NOMES DAS COLUNAS E DOS ROWS E DEPOIS COMO ACESSÁ-LOS
+    # for i in board:
+    #     for y in i:
+    #         print(board.index(listl[0])) CONTINUAR TRABALHANDO +- NESSA LINHA
 
-get_row_col("O")
+# get_row_col([
+#     ["X", "O", "X"],
+#     [" ", " ", " "],
+#     ["O", " ", " "],
+# ])
